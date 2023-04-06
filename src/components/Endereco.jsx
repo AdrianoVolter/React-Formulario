@@ -12,7 +12,7 @@ import {Container, Form , Button} from 'react-bootstrap';
 
 function Endereco() {
   return (
-    <Container className="col-6 ">
+    <Container className="col-6 bg-secondary ">
       <Form>
         <h1>Endereço</h1>
         <Form.Group controlId="formBasicEmail">

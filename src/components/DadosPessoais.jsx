@@ -6,7 +6,7 @@ function Dadospessoais(){
 
 
     return(
-        <Container className='col-6'>
+        <Container className='col-6 bg-secondary '>
             <Form> <br />
                 <h1>Dados Pessoais</h1>
                 <Form.Group controlId="formBasicEmail">
