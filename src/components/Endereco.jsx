@@ -12,7 +12,7 @@ import {Container, Form , Button} from 'react-bootstrap';
 
 function Endereco() {
   return (
-    <Container className="col-4 ">
+    <Container className="col-6 ">
       <Form>
         <h1>Endereço</h1>
         <Form.Group controlId="formBasicEmail">
@@ -44,7 +44,7 @@ function Endereco() {
           <Form.Control type="text" placeholder="Digite seu estado" />
         </Form.Group>
         <br />
-        <Form.Group controlId="formBasicPassword">
+        <Form.Group  controlId="formBasicPassword">
            <Button variant="primary" type="submit">
             Voltar
           </Button>
