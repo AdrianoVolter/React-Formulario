@@ -10,7 +10,7 @@ import { Card, Container } from "react-bootstrap";
 
 function Agradecimento() {
     return (
-        <Container className="col-12 bg bg-secondary">
+        <div className="col-12 bg bg-secondary">
 
             <Card className="row-9 col-6  bg-danger">
                 <Card.Body>
@@ -25,7 +25,7 @@ function Agradecimento() {
                     </Card.Text>
                 </Card.Body>
             </Card>
-        </Container>
+        </div>
     );
     }
 
