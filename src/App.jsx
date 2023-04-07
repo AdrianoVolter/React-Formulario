@@ -3,7 +3,7 @@ import Endereco from "./components/Endereco"
 import Agradecimento from "./components/Agradecimento"
 //import { BrowserRouter} from "react-router-dom"
 import { useState } from "react"
-//import { Container } from "react-bootstrap"
+import { Container, Form } from "react-bootstrap"
 
 
 //Forulario cadastro de usuario , Dados pessoais, Dados de endereço, Agradecimento
@@ -20,17 +20,26 @@ import { useState } from "react"
 
 function App() {
   return (
-      <div className="app">
+      <Container className="col-6 mt-4 ">
         <header>
           <h2>Cadastre-se gratuitamente!</h2>
           <p>Faça o seu cadastro para ter acesso a todos os recursos da nossa plataforma</p>
         </header>
           <div>
-              <form>
-                  // aqui vai a regra para exibir o componente do passo atual
-              </form>
+              <Form>
+                 <div
+                  className="col-6 "
+                  
+                 >
+                  <button className="btn btn-primary m-3"
+                  //onClick={(evento) => mudarPasso(0, evento)}
+                  >Voltar</button>
+                  <button className="btn btn-primary"
+                  >Avançar</button>
+                 </div>
+              </Form>
           </div>
-      </div>
+      </Container>
       )
   }
   

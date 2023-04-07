@@ -2,7 +2,9 @@
 import {  Container, Form } from 'react-bootstrap';
 
 
-function Dadospessoais({aoEnviar}){
+function Dadospessoais(){
+
+    
 
 
 
