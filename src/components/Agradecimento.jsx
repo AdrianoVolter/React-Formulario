@@ -6,7 +6,7 @@
 // Pelo LinkedIn
 // Pelo Instagram
 // Use o bootstrap para criar o select.
-import { Card } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 
 function Agradecimento() {
     return (
@@ -23,6 +23,7 @@ function Agradecimento() {
                             <option value="Pelo Instagram">Pelo Instagram</option>
                         </select>
                     </Card.Text>
+                    <Button variant="primary">Enviar</Button>
                 </Card.Body>
             </Card>
         </div>

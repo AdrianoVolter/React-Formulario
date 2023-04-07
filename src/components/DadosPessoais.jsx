@@ -1,10 +1,8 @@
 //form do bootstrap
-import { Button, Container, Form } from 'react-bootstrap';
+import {  Container, Form } from 'react-bootstrap';
 
 
-function Dadospessoais(
-    
-){
+function Dadospessoais({aoEnviar}){
 
 
 

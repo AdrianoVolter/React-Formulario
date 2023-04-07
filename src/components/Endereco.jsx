@@ -6,11 +6,13 @@
 // Cidade
 // CEP
 // Estado
-import {Container, Form , Button} from 'react-bootstrap';
+
+
+import {Container, Form } from 'react-bootstrap';
 
 
 
-function Endereco() {
+function Endereco({aoEnviar}) {
   return (
     <Container className="col-6 bg-secondary ">
       <Form>
@@ -43,7 +45,9 @@ function Endereco() {
           <Form.Label>Estado: </Form.Label>
           <Form.Control type="text" placeholder="Digite seu estado" />
         </Form.Group>
+
         <br />
+        
       </Form>
     </Container>
   );
