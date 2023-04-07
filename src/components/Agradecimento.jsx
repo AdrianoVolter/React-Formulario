@@ -10,8 +10,9 @@ import { Card, Container } from "react-bootstrap";
 
 function Agradecimento() {
     return (
-        <Container className="col-6 bg bg-secondary">
-            <Card>
+        <Container className="col-12 bg bg-secondary">
+
+            <Card className="row-9 col-6  bg-danger">
                 <Card.Body>
                     <Card.Title>Obrigado por se cadastrar!</Card.Title>
                     <Card.Text>
