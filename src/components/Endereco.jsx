@@ -44,15 +44,6 @@ function Endereco() {
           <Form.Control type="text" placeholder="Digite seu estado" />
         </Form.Group>
         <br />
-        <Form.Group  controlId="formBasicPassword">
-           <Button variant="primary" type="submit">
-            Voltar
-          </Button>
-          <Button variant="primary" type="submit">
-            Avançar
-          </Button>
-         
-        </Form.Group>
       </Form>
     </Container>
   );

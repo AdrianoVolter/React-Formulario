@@ -2,7 +2,10 @@
 import { Button, Container, Form } from 'react-bootstrap';
 
 
-function Dadospessoais(){
+function Dadospessoais(
+    
+){
+
 
 
     return(
@@ -19,14 +22,9 @@ function Dadospessoais(){
                     <Form.Control type="email" placeholder="Digite seu e-mail" />
                 </Form.Group>
                 <br />
-                <Form.Group controlId="formBasicPassword">
-                    <Button variant="primary" type="submit">
-                        Próximo
-                    </Button>
-                </Form.Group>
             </Form>
         </Container>
     )
 }
 
-export default Dadospessoais
+export default Dadospessoais;

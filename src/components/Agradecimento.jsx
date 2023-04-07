@@ -6,7 +6,7 @@
 // Pelo LinkedIn
 // Pelo Instagram
 // Use o bootstrap para criar o select.
-import { Card, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 function Agradecimento() {
     return (
