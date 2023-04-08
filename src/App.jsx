@@ -1,9 +1,10 @@
 import DadosPessoais from "./components/DadosPessoais"
 import Endereco from "./components/Endereco"
 import Agradecimento from "./components/Agradecimento"
-//import { BrowserRouter} from "react-router-dom"
 import { useState } from "react"
 import { Container, Form } from "react-bootstrap"
+import Passos from "./components/Passos"
+
 
 
 //Forulario cadastro de usuario , Dados pessoais, Dados de endereço, Agradecimento
@@ -19,6 +20,10 @@ import { Container, Form } from "react-bootstrap"
 
 
 function App() {
+
+  
+
+
   return (
       <Container className="col-6 mt-4 ">
         <header>
