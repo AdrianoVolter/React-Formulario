@@ -34,16 +34,21 @@ function App() {
               <Form>
                  <div
                   className="col-6 "
-                  
                  >
                   <button className="btn btn-primary m-3"
-                  //onClick={(evento) => mudarPasso(0, evento)}
+
                   >Voltar</button>
+
                   <button className="btn btn-primary"
+
                   >Avançar</button>
+
                  </div>
+
               </Form>
+
           </div>
+          
       </Container>
       )
   }

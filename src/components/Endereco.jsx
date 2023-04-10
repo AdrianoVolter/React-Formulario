@@ -12,7 +12,7 @@ import {Container, Form } from 'react-bootstrap';
 
 
 
-function Endereco({aoEnviar}) {
+function Endereco() {
   return (
     <Container className="col-6 bg-secondary ">
       <Form>

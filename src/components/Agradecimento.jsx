@@ -17,7 +17,7 @@ function Agradecimento() {
                     <Card.Title>Obrigado por se cadastrar!</Card.Title>
                     <Card.Text>
                         <p>Como você nos conheceu ?</p>
-                        <select>
+                        <select className="form-select">
                             <option value="Pelo seguinte">Pelo seguinte</option>
                             <option value="Pelo LinkedIn">Pelo LinkedIn</option>
                             <option value="Pelo Instagram">Pelo Instagram</option>
