@@ -13,6 +13,7 @@ export const SCFormContainer = styled.div`
     height: auto; 
     margin: 0 auto;
     background-color: #fff;
+    border-radius: 10px;
     padding: 35px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 

@@ -5,6 +5,7 @@ export const SCPassosContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
+    
 `;
 
 export const SCPasso = styled.span`
