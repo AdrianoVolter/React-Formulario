@@ -1,56 +1,46 @@
-import DadosPessoais from "./components/DadosPessoais"
-import Endereco from "./components/EnderecoForm"
+import { GrFormNextLink, GrFormPrevious } from "react-icons/gr"
+import { FiSend } from "react-icons/fi"
+import EnderecoForm from "./components/EnderecoForm"
 import Agradecimento from "./components/Agradecimento"
-import { useState } from "react"
-import { Container, Form } from "react-bootstrap"
+import DadosPessoais from "./components/DadosPessoais"
+import { SCButton, SCFormContainer, SCHeader } from "./styles"
+
+import { useForm } from "./hooks/useForm"
 import Passos from "./components/Passos"
-
-
-
-//Forulario cadastro de usuario , Dados pessoais, Dados de endereço, Agradecimento
-
-// useState uma variável para guardar a informação do passo atual
-//const [passoAtual, setPassoAtual] = useState(0)
-
-// function mudarPasso(passo, evento) {
-//   evento.preventDefault()
-//   setPassoAtual(passo)
-
-// }
-
 
 function App() {
 
-  
+  const componentesFormulario = [<DadosPessoais />, <EnderecoForm />, <Agradecimento />]
 
+  const { passoAtual, componenteAtual, mudarPasso, ehUltimoPasso } = useForm(componentesFormulario)
 
   return (
-      <Container className="col-6 mt-4 ">
-        <header>
-          <h2>Cadastre-se gratuitamente!</h2>
-          <p>Faça o seu cadastro para ter acesso a todos os recursos da nossa plataforma</p>
-        </header>
-          <div>
-              <Form>
-                 <div
-                  className="col-6 "
-                 >
-                  <button className="btn btn-primary m-3"
-
-                  >Voltar</button>
-
-                  <button className="btn btn-primary"
-
-                  >Avançar</button>
-
-                 </div>
-
-              </Form>
-
+    <div className="app">
+      <SCHeader>
+        <h2>Cadastre-se gratuitamente!</h2>
+        <p>Faça o seu cadastro para ter acesso a todos os recursos da nossa plataforma</p>
+      </SCHeader>
+      <SCFormContainer>
+        <form onSubmit={(e) => mudarPasso(passoAtual + 1, e)}>
+          <Passos passoAtual={passoAtual}/>
+          <div className="inputs-container">
+            {componenteAtual}
           </div>
-          
-      </Container>
-      )
-  }
-  
-  export default App
+          <div className="acoes">
+            {!passoAtual == 0 && 
+            <SCButton type="button" onClick={(e) => mudarPasso(passoAtual - 1, e)}>
+              <GrFormPrevious /><span>Voltar</span>
+            </SCButton>}
+            {ehUltimoPasso ? (
+              <SCButton type="submit"><span>Enviar</span><FiSend /></SCButton>
+            ) : (
+              <SCButton type="submit"><span>Avançar</span><GrFormNextLink /></SCButton>
+            )}
+          </div>
+        </form>
+      </SCFormContainer>
+    </div>
+  )
+}
+
+export default App
