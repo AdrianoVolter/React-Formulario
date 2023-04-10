@@ -6,28 +6,24 @@
 // Pelo LinkedIn
 // Pelo Instagram
 // Use o bootstrap para criar o select.
-import { Button, Card } from "react-bootstrap";
-
 function Agradecimento() {
     return (
-        <div className="col-12 bg bg-secondary">
+        <div>
+            <h3>Obrigado pelo seu cadastro!</h3>
 
-            <Card className="row-9 col-6  bg-danger">
-                <Card.Body>
-                    <Card.Title>Obrigado por se cadastrar!</Card.Title>
-                    <Card.Text>
-                        <p>Como você nos conheceu ?</p>
-                        <select className="form-select">
-                            <option value="Pelo seguinte">Pelo seguinte</option>
-                            <option value="Pelo LinkedIn">Pelo LinkedIn</option>
-                            <option value="Pelo Instagram">Pelo Instagram</option>
-                        </select>
-                    </Card.Text>
-                    <Button variant="primary">Enviar</Button>
-                </Card.Body>
-            </Card>
+            <div className="row">
+                <h4>Conte-nos: onde nos conheceu?</h4>
+                <div className="col-12">
+                    <select className="form-select" aria-label="Default select example">
+                        <option defaultValue>Selecione</option>
+                        <option value="site">Pelo site</option>
+                        <option value="linkedind">Pelo LinkedIn</option>
+                        <option value="instagram">Pelo Instagram</option>
+                    </select>
+                </div>
+            </div>
         </div>
     );
-    }
+}
 
-    export default Agradecimento;
+export default Agradecimento;

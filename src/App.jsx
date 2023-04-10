@@ -1,5 +1,5 @@
 import DadosPessoais from "./components/DadosPessoais"
-import Endereco from "./components/Endereco"
+import Endereco from "./components/EnderecoForm"
 import Agradecimento from "./components/Agradecimento"
 import { useState } from "react"
 import { Container, Form } from "react-bootstrap"

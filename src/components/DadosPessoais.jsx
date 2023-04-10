@@ -6,25 +6,23 @@ function Dadospessoais(){
 
     
 
-
-
-    return(
-        <Container className='col-6 bg-secondary '>
-            <Form> <br />
-                <h1>Dados Pessoais</h1>
-                <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Nome: </Form.Label>
-                    <Form.Control type="text" placeholder="Digite seu nome" />
-                </Form.Group>
-
-                <Form.Group controlId="formBasicPassword">
-                    <Form.Label>E-mail: </Form.Label>
-                    <Form.Control type="email" placeholder="Digite seu e-mail" />
-                </Form.Group>
-                <br />
-            </Form>
-        </Container>
-    )
+    return (
+        <div>
+            <div className="col-12">
+                <label className="form-label" htmlFor="name">Nome:</label>
+                <div className="input-group mb-3 col-12">
+                    <input type="text" className="form-control" name="name" id="name" placeholder="Digite o seu nome" required />
+                </div>
+            </div>
+            <div className="col-12">
+                <label className="form-label" htmlFor="name">Email:</label>
+                <div className="input-group">
+                    <input type="text" className="form-control" name="email" id="email" placeholder="Digite o seu email" required />
+                </div>
+            </div>
+        </div>
+    );
 }
+
 
 export default Dadospessoais;
